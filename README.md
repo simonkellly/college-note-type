@@ -4,23 +4,19 @@ It is inspired and uses a lot of the setup from the AnKing note types.
 
 ## Fields
 ### Text
-Arial 18pt
+Arial 20pt
 - [X] Sort by this field in browser
 
-### Extra
-Arial 18pt
+### Lecture Notes
+Arial 20pt
 - [ ] Sort by this field in browser
 
 ### Personal Notes
-Arial 18pt
+Arial 20pt
 - [ ] Sort by this field in browser
 
-### Missed Questions
-Arial 18pt
-- [ ] Sort by this field in browser
-
-### One by One
-Arial 8pt
+### Extra
+Arial 20pt
 - [ ] Sort by this field in browser
 
 ## Options
@@ -30,6 +26,7 @@ Arial 8pt
 ```latex
 \documentclass[12pt]{article}
 \special{papersize=3in,5in}
+\usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath}
 \pagestyle{empty}
 \setlength{\parindent}{0in}

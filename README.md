@@ -5,26 +5,26 @@ It is inspired and uses a lot of the setup from the AnKing note types.
 ## Fields
 ### Text
 Arial 18pt
-[X] Sort by this field in browser
+- [X] Sort by this field in browser
 
 ### Extra
 Arial 18pt
-[ ] Sort by this field in browser
+- [ ] Sort by this field in browser
 
 ### Personal Notes
 Arial 18pt
-[ ] Sort by this field in browser
+- [ ] Sort by this field in browser
 
 ### Missed Questions
 Arial 18pt
-[ ] Sort by this field in browser
+- [ ] Sort by this field in browser
 
 ### One by One
 Arial 8pt
-[ ] Sort by this field in browser
+- [ ] Sort by this field in browser
 
 ## Options
-[ ] Create scalable images with dvisvgm
+- [ ] Create scalable images with dvisvgm
 
 ### Header
 ```latex

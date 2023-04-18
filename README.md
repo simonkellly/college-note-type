@@ -19,6 +19,16 @@ Arial 20pt
 Arial 20pt
 - [ ] Sort by this field in browser
 
+### First Aid
+Arial 20pt
+- [ ] Sort by this field in browser
+
+### Additional
+Arial 20pt
+- [ ] Sort by this field in browser
+
+
+
 ## Options
 - [ ] Create scalable images with dvisvgm
 

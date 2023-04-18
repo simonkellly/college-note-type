@@ -7,6 +7,8 @@
 <div class="hints additional">
   <span data-button="📖 Lecture">{{edit:Lecture Notes}}</span>
   <span data-button="🧠 Personal">{{edit:Personal Notes}}</span>
+  <span data-button="🥇 First Aid">{{edit:First Aid}}</span>
+  <span data-button="🔍 Additional Resources">{{edit:Additional}}</span>
 </div>
 
 
@@ -33,15 +35,17 @@
   }
 
   function setupButtons() {
+    const toRemove = [];
     const spans = document.getElementsByTagName("span");
     for (let i = 0; i < spans.length; i++) {
       const span = spans[i];
       const data = span.getAttribute("data-button");
       if (!data) continue;
-      if (!span.innerText) {
-        span.remove();
+      if (!span.firstChild.innerHTML.trim()) {
+        toRemove.push(span);
         continue;
       }
+      console.log(span.firstChild.innerHTML.trim())
 
       const html = span.innerHTML;
       span.innerHTML = "";
@@ -61,6 +65,8 @@
       span.append(button);
       span.append(textElem);
     }
+
+    toRemove.forEach(elem => elem.remove());
   }
 
 	setupButtons();  

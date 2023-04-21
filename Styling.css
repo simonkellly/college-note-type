@@ -1,3 +1,7 @@
+html {
+  font-size: 28px;
+}
+
 #qa { 
   font-family: Arial Greek, Arial;
 }
@@ -24,7 +28,7 @@ ul, ol {
 }
 
 .question {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .cloze {
@@ -38,7 +42,7 @@ ul, ol {
 
 .additional {
 	font-style: italic;
-  font-size: 1.25rem;
+  font-size: 0.85rem;
 }
 
 .extra {
@@ -52,7 +56,7 @@ ul, ol {
 }
 
 .hint {
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 }
 
 .button-general {
@@ -60,6 +64,7 @@ ul, ol {
   display: inline-block;
   background-color: #424242;
   color: #AFAFAF !important;
+	padding: 1px 6px !important;
 }
 
 .button-general:hover {
@@ -70,10 +75,11 @@ ul, ol {
 .expanded-button {
   display: block;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
   width: 50% !important;
   background: #ababab !important;
   color: black !important;
   font-weight: bold;
 }
-

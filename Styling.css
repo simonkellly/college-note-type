@@ -60,14 +60,20 @@ ul, ol {
 }
 
 .button-general {
+  outline: 0;
+  border-radius: 0.12em;
+  border: 1px solid #525253 !important;
+	padding: 5px 8px !important;
   text-align: center;
   display: inline-block;
+  font-size: 9.5px;
   background-color: #424242;
   color: #AFAFAF !important;
-	padding: 1px 6px !important;
+  margin-top: 8px;
 }
 
 .button-general:hover {
+  cursor: default;
   background-color: #E9E9E9 !important;
   color: #363638 !important;
 }
@@ -76,10 +82,10 @@ ul, ol {
   display: block;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-weight: bold;
   width: 50% !important;
   background: #ababab !important;
   color: black !important;
   font-weight: bold;
+  width: 50% !important;
 }

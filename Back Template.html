@@ -1,19 +1,19 @@
 <div class="question">
-  {{edit:cloze:Text}}
+  {{cloze:Text}}
 </div>
 
 <hr class="divider">
 
 <div class="hints additional">
-  <span data-button="📖 Lecture">{{edit:Lecture Notes}}</span>
-  <span data-button="🧠 Personal">{{edit:Personal Notes}}</span>
-  <span data-button="🥇 First Aid">{{edit:First Aid}}</span>
-  <span data-button="🔍 Additional Resources">{{edit:Additional}}</span>
+  <span data-button="📖 Lecture">{{Lecture Notes}}</span>
+  <span data-button="🧠 Personal">{{Personal Notes}}</span>
+  <span data-button="🥇 First Aid">{{First Aid}}</span>
+  <span data-button="🔍 Additional Resources">{{Additional}}</span>
 </div>
 
 
 <div class="extra additional">
-  {{edit:Extra}}
+  {{Extra}}
 </div>
 
 
@@ -40,16 +40,17 @@
     for (let i = 0; i < spans.length; i++) {
       const span = spans[i];
       const data = span.getAttribute("data-button");
+
       if (!data) continue;
-      if (!span.firstChild.innerHTML.trim()) {
+      console.log(data);
+
+      if (span.innerHTML.trim() === "") {
         toRemove.push(span);
         continue;
       }
-      console.log(span.firstChild.innerHTML.trim())
 
       const html = span.innerHTML;
       span.innerHTML = "";
-
       const button = createButton(data);
       const textElem = createText(html);
 
@@ -68,6 +69,6 @@
 
     toRemove.forEach(elem => elem.remove());
   }
-
+  
 	setupButtons();  
 </script>
